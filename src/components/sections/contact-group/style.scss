@@ -1,0 +1,34 @@
+.contact-group {
+  display: flex;
+  row-gap: size(8);
+  align-self: stretch;
+
+  &.-vertical {
+    flex-direction: column;
+  }
+
+  &:not(.-transparent) {
+    background-color: var(--grey);
+
+    @include min($desktop) {
+      padding: size(6) size(2);
+    }
+
+    @include max($desktop) {
+      padding: size(6) 20px;
+    }
+
+    .contact-item-label {
+      color: var(--text-grey);
+    }
+  }
+
+  @include max($desktop) {
+    justify-content: space-between;
+  }
+
+  @include min($desktop) {
+    column-gap: size(2);
+    justify-content: flex-end;
+  }
+}

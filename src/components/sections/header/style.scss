@@ -1,0 +1,33 @@
+.header {
+  padding: size(4) 0;
+  position: sticky;
+  top: 0;
+  background-color: var(--body);
+  z-index: 2;
+
+  .container-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-logo {
+    max-width: 80%;
+  }
+
+  &-nav-list {
+    display: flex;
+    align-items: center;
+    column-gap: size(1);
+  }
+
+  &-links-list {
+    display: flex;
+    align-items: center;
+    column-gap: size(8);
+  }
+
+  .menu-icon {
+    font-size: 1.5rem;
+  }
+}

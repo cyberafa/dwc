@@ -1,0 +1,36 @@
+.btn {
+  display: inline-flex;
+  background-color: var(--btn-color, #000);
+  border: solid 3px var(--btn-color, #000);
+  color: #fff;
+  padding: {
+    top: size(8);
+    bottom: size(8);
+    left: size(4);
+    right: size(4);
+  }
+
+  &:hover {
+    &.-outlined {
+      background-color: var(--btn-color, #000);
+      color: #fff;
+    }
+
+    &:not(.-outlined) {
+      opacity: 0.8;
+    }
+  }
+
+  &.-primary {
+    --btn-color: var(--primary);
+    color: #fff;
+  }
+
+  &.-outlined {
+    background: none;
+  }
+
+  &.-black {
+    color: #000;
+  }
+}

@@ -1,0 +1,15 @@
+.history {
+  background: url("../../../assets/images/history.jpg");
+  color: #fff;
+  padding: size(1) 0;
+
+  .container-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > * {
+      max-width: 50%;
+    }
+  }
+}

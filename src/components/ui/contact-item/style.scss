@@ -1,0 +1,14 @@
+.contact-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  gap: 5px;
+
+  @include max($desktop) {
+    flex-direction: column;
+  }
+
+  .icon {
+    color: var(--primary);
+  }
+}

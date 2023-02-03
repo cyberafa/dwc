@@ -1,0 +1,34 @@
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: size(3) 0;
+
+  .container-wrapper {
+    display: flex;
+    align-items: center;
+
+    > * {
+      flex-grow: 1;
+    }
+  }
+
+  &-logo {
+    max-width: 80%;
+  }
+
+  &-enterprise {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    row-gap: size(2);
+
+    @include max($desktop) {
+      flex-direction: column;
+    }
+  }
+
+  &-nav-list {
+    display: flex;
+    justify-content: space-around;
+  }
+}

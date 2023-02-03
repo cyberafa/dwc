@@ -1,0 +1,26 @@
+.categories {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--category-bg);
+  text-align: left;
+  width: 25%;
+  height: fit-content;
+
+  .item {
+    display: block;
+    padding: size(4);
+    border-bottom: 1px solid var(--category-border);
+    cursor: pointer;
+    white-space: nowrap;
+
+    &:hover {
+      background-color: var(--category-hover);
+    }
+  }
+
+  .sub-category {
+    &-item {
+      padding: size(4) size(2);
+    }
+  }
+}

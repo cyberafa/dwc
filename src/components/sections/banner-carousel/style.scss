@@ -1,0 +1,13 @@
+.banner-carousel {
+  .splide__pagination__page {
+    opacity: 1;
+    border: 1px solid #fff;
+    background: none;
+
+    &.is-active {
+      background-color: var(--primary);
+      border-color: var(--primary);
+      transform: none;
+    }
+  }
+}

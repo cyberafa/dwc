@@ -1,0 +1,14 @@
+.banner-features {
+  background-color: #000;
+  color: #fff;
+  padding: size(2);
+  .container-wrapper {
+    display: flex;
+    justify-content: space-around;
+
+    @include max($desktop) {
+      flex-direction: column;
+      gap: size(3);
+    }
+  }
+}

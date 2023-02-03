@@ -1,0 +1,20 @@
+:root {
+  /* colors */
+  --primary: #e00000;
+  --text-color: #000000;
+  --text-grey: #908c87;
+  --grey: #ededed;
+  --body: #ffffff;
+  --category-border: #cfcfd0;
+  --category-bg: #f3f3f4;
+  --category-hover: #dfdfdf;
+
+  /* spacing */
+  @include max($desktop) {
+    --spacing: calc(4rem);
+  }
+
+  @include min($desktop) {
+    --spacing: calc(5rem);
+  }
+}

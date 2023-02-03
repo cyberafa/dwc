@@ -1,0 +1,34 @@
+.product-item {
+  display: flex;
+  width: 100%;
+  gap: size(2);
+  border: 1px solid #000;
+  padding: size(2) size(1);
+
+  &-image {
+    max-width: 40%;
+  }
+
+  &-content {
+    text-align: left;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: size(4);
+  }
+
+  &-name {
+    border-bottom: 2px solid var(--primary);
+    line-height: 2;
+  }
+
+  .btn {
+    align-self: flex-end;
+  }
+}

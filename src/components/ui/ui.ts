@@ -1,0 +1,9 @@
+export { default as Button } from "./button/Button.vue";
+export { default as ContactItem } from "./contact-item/ContactItem.vue";
+export { default as Container } from "./container/Container.vue";
+export { default as FeatureCard } from "./feature-card/FeatureCard.vue";
+export { default as Icon } from "./icon/Icon.vue";
+export { default as Link } from "./link/Link.vue";
+export { default as IconText } from "./icon-text/IconText.vue";
+export { default as ProductItem } from "./product-item/ProductItem.vue";
+export { default as TextImage } from "./text-image/TextImage.vue";

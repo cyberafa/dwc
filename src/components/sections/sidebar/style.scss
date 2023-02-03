@@ -1,0 +1,75 @@
+.sidebar {
+  @keyframes openDrawer {
+    0% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  .icon {
+    font-size: 1.5rem;
+  }
+
+  .sidebar-overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary);
+    opacity: 0.2;
+    z-index: 1;
+  }
+
+  .drawer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .drawer-logo {
+      max-width: 40%;
+    }
+  }
+
+  .sidebar-drawer {
+    transition: all 1s;
+    width: 80vw;
+    height: 100vh;
+    height: -moz-available;
+    height: -webkit-fill-available;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--body);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: size(4);
+    text-align: center;
+    animation: openDrawer 0.2s ease-in-out;
+  }
+
+  .drawer-wrapper {
+    flex-grow: 1;
+
+    .drawer-nav-list {
+      display: flex;
+      flex-direction: column;
+      row-gap: size(1.5);
+    }
+  }
+
+  .drawer-footer {
+    bottom: 0;
+
+    .drawer-links-list {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+}

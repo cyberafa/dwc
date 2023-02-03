@@ -1,0 +1,28 @@
+.product-ordering {
+  &-header {
+    display: flex;
+    align-items: center;
+    column-gap: size(2);
+    text-align: left;
+    margin-bottom: size(3);
+
+    > * {
+      flex-basis: 50%;
+    }
+  }
+
+  &-category {
+    background-color: var(--category-bg);
+    padding: size(8);
+  }
+
+  &-filter {
+    display: flex;
+    align-items: center;
+    column-gap: size(8);
+
+    select {
+      width: 50%;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.image-showcase {
+  &-image {
+    max-height: 327px;
+
+    @include max($desktop) {
+      width: calc(100% / 2);
+    }
+
+    @include min($desktop) {
+      width: calc(100% / 4);
+    }
+  }
+}

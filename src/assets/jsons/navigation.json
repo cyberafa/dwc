@@ -1,0 +1,18 @@
+[
+  {
+    "slug": "home",
+    "link": "home"
+  },
+  {
+    "slug": "empresa",
+    "link": "about"
+  },
+  {
+    "slug": "produtos",
+    "link": "products"
+  },
+  {
+    "slug": "contato",
+    "link": "contact"
+  }
+]

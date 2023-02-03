@@ -1,0 +1,14 @@
+.features {
+  .container-wrapper {
+    display: flex;
+    gap: size(2);
+
+    @include max($desktop) {
+      flex-direction: column;
+    }
+
+    @include min($desktop) {
+      justify-content: space-between;
+    }
+  }
+}
